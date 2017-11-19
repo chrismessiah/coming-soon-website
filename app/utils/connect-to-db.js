@@ -10,7 +10,6 @@ module.exports = async (sql, opts) => {
   let res;
   try {
     res = await pool.query(sql, opts);
-    await pool.end()
   } catch (e) {
     console.log(e);
   }

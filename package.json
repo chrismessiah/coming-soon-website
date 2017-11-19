@@ -26,7 +26,8 @@
     "humps": "^2.0.0",
     "jquery": "^3.2.1",
     "pg": "^7.4.0",
-    "prettyjson": "^1.2.1"
+    "prettyjson": "^1.2.1",
+    "sweetalert": "^2.0.8"
   },
   "engines": {
     "node": "^8.9.1"
