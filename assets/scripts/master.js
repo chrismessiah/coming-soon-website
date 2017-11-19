@@ -1,7 +1,8 @@
 var $ = require('jquery');
-var foo = require('./foo');
+var subscribe = require('./subscribe');
+var spin = require('./spin');
 
 $(document).ready(function() {
-  viewScript();
-  foo();
+  subscribe();
+  spin();
 });

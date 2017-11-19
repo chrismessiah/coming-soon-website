@@ -1,14 +1,35 @@
-div
-  height: 50vh
+.root-container
+  background: #01081f linear-gradient(#396bff, #01081f)
+  min-height: 100vh
   width: 100vw
   display: flex
   justify-content: center
   align-items: center
   flex-direction: column
-  &:first-child
-    background-color: rgb(204, 255, 228)
-  &:last-child
-    background-color: rgb(186, 255, 234)
-
-.tomato
-  color: red
+  input[type="text"]
+    background-color: transparent
+    border: 2px solid white
+    color: white
+    outline: none
+    padding: 5px
+    font-size: 16px
+    margin-bottom: 100px
+    width: 250px
+    &::-webkit-input-placeholder
+      color: white
+  button
+    background-color: white
+    padding: 5px
+    color: #162349
+    border-radius: 0
+    font-size: 16px
+    border: 2px solid white
+    // &:hover
+    //   background-color: rgb(195, 195, 195)
+    //   border: 2px solid rgb(195, 195, 195)
+  p
+    color: white
+    font-size: 18px
+  h1
+    color: white
+    margin-bottom: 0
