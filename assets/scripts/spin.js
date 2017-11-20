@@ -2,7 +2,7 @@ module.exports = function() {
     /* super inefficient right now, could be improved */
     var c = document.getElementById('c'),
     ctx = c.getContext('2d'),
-    cw = c.width = 400,
+    cw = c.width = 300,
     ch = c.height = 300,
     rand = function(a,b){return ~~((Math.random()*(b-a+1))+a);},
     dToR = function(degrees){
