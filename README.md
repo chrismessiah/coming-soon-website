@@ -1,6 +1,6 @@
 # sample-coming-soon-website
 
-_Becuase why start from scratch?_
+Demo available at: [https://sample-coming-soon-website.herokuapp.com/](https://sample-coming-soon-website.herokuapp.com/)
 
 ## Files to change
 
