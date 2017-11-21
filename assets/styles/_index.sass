@@ -4,59 +4,56 @@
   50%
     transform: scale(1.2)
 
-
-.root-container
-  background: #01081f linear-gradient(#396bff, #01081f)
+body
   min-height: 100vh
   width: 100vw
+  background: #01081f linear-gradient(#396bff, #01081f)
   display: flex
   justify-content: center
   align-items: center
-  flex-direction: column
-  canvas
-    transform: scale(0.8)
-    @extend .linear-transition
-    @media screen and (min-width: 400px)
-      transform: scale(1)
-  #subscribe-containter
-    margin-bottom: 100px
+  .root-container
     display: flex
-    justify-content: center
     align-items: center
     flex-direction: column
-    @media screen and (min-width: 400px)
-      flex-direction: row
-    input[type="text"]
-      background-color: transparent
-      border: 2px solid white
-      color: white
-      outline: none
-      padding: 5px
-      font-size: 16px
-      min-width: 250px
-      max-width: 90vw
-      &::-webkit-input-placeholder
-        color: white
-    button
-      background-color: white
-      padding: 5px
-      color: #162349
-      border-radius: 0
-      font-size: 16px
-      border: 2px solid white
-      margin-left: 0
-      margin-top: 10px
+    #subscribe-containter
+      margin-bottom: 100px
+      display: flex
+      justify-content: center
+      align-items: center
+      flex-direction: column
       @media screen and (min-width: 400px)
-        margin-left: 10px
-        margin-top: 0
-      &:hover
-        animation: pop 0.2s linear 1
-  p,
-  h1
-    text-align: center
-    color: white
-    max-width: 90vw
-  p
-    font-size: 18px
-  h1
-    margin-bottom: 0
+        flex-direction: row
+      input[type="text"]
+        background-color: transparent
+        border: 2px solid white
+        color: white
+        outline: none
+        padding: 5px
+        font-size: 16px
+        min-width: 250px
+        max-width: 90vw
+        &::-webkit-input-placeholder
+          color: white
+      button
+        background-color: white
+        padding: 5px
+        color: #162349
+        border-radius: 0
+        font-size: 16px
+        border: 2px solid white
+        margin-left: 0
+        margin-top: 10px
+        @media screen and (min-width: 400px)
+          margin-left: 10px
+          margin-top: 0
+        &:hover
+          animation: pop 0.2s linear 1
+    p,
+    h1
+      text-align: center
+      color: white
+      max-width: 90vw
+    p
+      font-size: 18px
+    h1
+      margin-bottom: 0

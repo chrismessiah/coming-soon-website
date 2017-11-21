@@ -1,9 +1,15 @@
+var RADIUS = 70;            // must be correlated
+var CANVAS_LENGTH = 250;    // must be correlated
+var COLOR = 220;
+var SPEED = 2;
+var THICKNESS = 18;
+
 module.exports = function() {
     /* super inefficient right now, could be improved */
     var c = document.getElementById('c'),
     ctx = c.getContext('2d'),
-    cw = c.width = 300,
-    ch = c.height = 300,
+    cw = c.width = CANVAS_LENGTH,
+    ch = c.height = CANVAS_LENGTH,
     rand = function(a,b){return ~~((Math.random()*(b-a+1))+a);},
     dToR = function(degrees){
         return degrees * (Math.PI / 180);
@@ -11,13 +17,13 @@ module.exports = function() {
     circle = {
         x: (cw / 2) + 5,
         y: (ch / 2) + 22,
-        radius: 90,
-        speed: 2,
+        radius: RADIUS,
+        speed: SPEED,
         rotation: 0,
         angleStart: 270,
         angleEnd: 90,
-        hue: 220,
-        thickness: 18,
+        hue: COLOR,
+        thickness: THICKNESS,
         blur: 25
     },
     particles = [],
